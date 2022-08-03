@@ -4,95 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Site de Receitas</title>
 </head>
 <body>
+
   <section class="fixo">
     <header>
       <div id="head">
-        <img class="logo-header" src="imagens/icone.gif" alt="ícone principal">
+        <img class="logo-header" src="imagens/icone.gif">
         <h1 class="titulo-principal">Site de Receitas</h1>
       </div>      
     </header>
+
     <nav>
-      <ul id="list-categories">
-        <li data-view="all" class="categorie active">Todas</li>
-        <li data-view="bolo" class="categorie">Bolos</li>
-        <li data-view="carne" class="categorie">Carnes</li>
-        <li data-view="bebidas" class="categorie">Bebidas</li>
+      <ul id="list-categorias">
+        <li data-show="all" class="categoria selecionar">Todas</li>
+        <li data-show="bolo" class="categoria">Bolos</li>
+        <li data-show="carne" class="categoria">Carnes</li>
+        <li data-show="bebidas" class="categoria">Bebidas</li>
       </ul>
     </nav>
   </section>
 
-  <section class="body">
-    <div data-card="bolo" class="card">
-      <img class="imagem-cartao" src="imagens/boloCenoura.png" alt="Bolo de cenoura">
-      <div class="card-body">
-        <h3 class="titulo-cartao">Bolo de cenoura</h3>
-        <small class="tipo-comida">Bolos</small>
-        <i class="bi bi-heart heart-icon"></i>
-      </div>
-    </div>
+<section class="body">
+<div data-carta="bolo" class="carta">
+  <img class="imagem-cartao" src="imagens/boloCenoura.png">
+  <div class="carta-body">
+    <p class="titulo-cartao">Bolo de cenoura</p>
+    <small class="tipo-comida">Bolos</small>
+    <img id="curtir" class="coracaoCheio" src="imagens/coracaoVazio.png" onclick="favoritar1()">
+  </div>
+</div>
 
-    <div data-card="bolo" class="card">
-      <img class="imagem-cartao" src="imagens/boloFuba.png" alt="Bolo de fubá">
-      <div class="card-body">
-        <h3 class="titulo-cartao">Bolo de fubá</h3>
-        <small class="tipo-comida">Bolos</small>
-        <i class="bi bi-heart heart-icon"></i>
-      </div>
-    </div>
+<div data-carta="bolo" class="carta">
+  <img class="imagem-cartao" src="imagens/boloFuba.png">
+  <div class="carta-body">
+    <p class="titulo-cartao">Bolo de fubá</p>
+    <small class="tipo-comida">Bolos</small>
+    <img id="curtir2" class="coracaoCheio" src="imagens/coracaoVazio.png" onclick="favoritar2()">
+  </div>
+</div>
 
-    <div data-card="bebidas" class="card">
-      <img class="imagem-cartao" src="imagens/cappuccino.png" alt="Cappuccino">
-      <div class="card-body">
-        <h3 class="titulo-cartao">Capuccino</h3>
-        <small class="tipo-comida">Bebidas</small>
-        <i class="bi bi-heart heart-icon"></i>
-      </div>
-    </div>
+<div data-carta="bebidas" class="carta">
+  <img class="imagem-cartao" src="imagens/limonada.png">
+  <div class="carta-body">
+    <p class="titulo-cartao">Limonada</p>
+    <small class="tipo-comida">Bebidas</small>
+    <img id="curtir3" class="coracaoCheio" src="imagens/coracaoVazio.png" onclick="favoritar3()">
+  </div>
+</div>
 
-    <div data-card="carne" class="card">
-      <img class="imagem-cartao" src="imagens/hamburguer.png" alt="Hamburguer">
-      <div class="card-body">
-        <h3 class="titulo-cartao">Hamburguer</h3>
-        <small class="tipo-comida">Carnes</small>
-        <i class="bi bi-heart heart-icon"></i>
-      </div>
-    </div>
+<div data-carta="carne" class="carta">
+  <img class="imagem-cartao" src="imagens/hamburguer.png">
+  <div class="carta-body">
+    <p class="titulo-cartao">Hamburguer Artesanal</p>
+    <small class="tipo-comida">Carnes</small>
+    <img id="curtir4" class="coracaoCheio" src="imagens/coracaoVazio.png" onclick="favoritar4()">
+  </div>
+</div>
 
-    <div data-card="carne" class="card">
-      <img class="imagem-cartao" src="imagens/parmegiana.png" alt="Parmegiana">
-      <div class="card-body">
-        <h3 class="titulo-cartao">Parmegiana de carne</h3>
-        <small class="tipo-comida">Carnes</small>
-        <i class="bi bi-heart heart-icon"></i>
-      </div>
-    </div>
+<div data-carta="carne" class="carta">
+  <img class="imagem-cartao" src="imagens/parmegiana.png">
+  <div class="carta-body">
+    <p class="titulo-cartao">Parmegiana de carne</p>
+    <small class="tipo-comida">Carnes</small>
+    <img id="curtir5" class="coracaoCheio" src="imagens/coracaoVazio.png" onclick="favoritar5()">
+  </div>
+</div>
 
-    <div data-card="carne" class="card">
-      <img class="imagem-cartao" src="imagens/carne.png" alt="Carne assada">
-      <div class="card-body">
-        <h3 class="titulo-cartao">Carne assada</h3>
-        <small class="tipo-comida">Carnes</small>
-        <i class="bi bi-heart heart-icon"></i>
-      </div>
-    </div>
+<div data-carta="carne" class="carta">
+  <img class="imagem-cartao" src="imagens/carne.png">
+  <div class="carta-body">
+    <p class="titulo-cartao">Carne assada ao molho madeira</p>
+    <small class="tipo-comida">Carnes</small>
+    <img id="curtir6" class="coracaoCheio" src="imagens/coracaoVazio.png" onclick="favoritar6()">
+  </div>
+</div>
 
-    <div data-card="bebidas" class="card">
-      <img class="imagem-cartao" src="imagens/milkshake.jpeg" alt="MilkShake">
-      <div class="card-body">
-        <h3 class="titulo-cartao">MilkShake</h3>
-        <small class="tipo-comida">Bebidas</small>
-        <i class="bi bi-heart heart-icon"></i>
-      </div>
-    </div>
-  </section>
+<div data-carta="bebidas" class="carta">
+  <img class="imagem-cartao" src="imagens/vitamina.png">
+  <div class="carta-body">
+    <p class="titulo-cartao">Vitamina de frutas vermelhas</p>
+    <small class="tipo-comida">Bebidas</small>
+    <img id="curtir7" class="coracaoCheio" src="imagens/coracaoVazio.png" onclick="favoritar7()">
+  </div>
+</div>
+</section>
 
   <script src="javaScript/script.js"></script>
+
+<footer>
+ Site de receitas 2022 &copy; 
+</footer>
 
 </body>
 </html>

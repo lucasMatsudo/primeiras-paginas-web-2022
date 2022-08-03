@@ -1,38 +1,98 @@
-const views = document.querySelectorAll("[data-view]");
-const cards = document.querySelectorAll("[data-card]");
-const simboloCoracao = document.querySelectorAll(".heart-icon");
+const shows = document.querySelectorAll("[data-show]");
+const cartas = document.querySelectorAll("[data-carta]");
 
-simboloCoracao.forEach(icon => icon.addEventListener('click', ()=> {
-    icon.classList.toggle("bi-heart");
-    icon.classList.toggle("bi-heart-fill");
-}
-))
-
-views.forEach(view => view.addEventListener('click', () =>{
-    const valueView = view.dataset.view;
-
-    for(let i=0; i< views.length; i++){
-        if(views[i].classList[1]){
-            views[i].classList.remove("active");
-        }
+function favoritar1(){
+const img = document.getElementById('curtir');
+    if (img.src.match("imagens/coracaoVazio.png")) {
+        img.src = "imagens/coracaoCheio.png";
+    }else{
+        img.src = "imagens/coracaoVazio.png";
     }
+}
 
-    view.classList.add("active");
+function favoritar2(){
+const img = document.getElementById('curtir2');
+    if (img.src.match("imagens/coracaoVazio.png")) {
+        img.src = "imagens/coracaoCheio.png";
+    }else{
+        img.src = "imagens/coracaoVazio.png";
+    }
+}
 
-    filtrarItens(valueView);
-}))
+function favoritar3(){
+    const img = document.getElementById('curtir3');
+    if (img.src.match("imagens/coracaoVazio.png")) {
+        img.src = "imagens/coracaoCheio.png";
+    }else{
+        img.src = "imagens/coracaoVazio.png";
+    }
+}
 
-function filtrarItens(valueView){
+function favoritar4(){
+    const img = document.getElementById('curtir4');
+    if (img.src.match("imagens/coracaoVazio.png")) {
+        img.src = "imagens/coracaoCheio.png";
+    }else{
+        img.src = "imagens/coracaoVazio.png";
+    }
+}
 
-    cards.forEach(card => {
-        card.classList.remove('hide');
+function favoritar5(){
+    const img = document.getElementById('curtir5');
+    if (img.src.match("imagens/coracaoVazio.png")) {
+        img.src = "imagens/coracaoCheio.png";
+    }else{
+        img.src = "imagens/coracaoVazio.png";
+    }
+}
 
-        if(valueView == "all"){
-            card.classList.remove('hide');
+function favoritar5(){
+    const img = document.getElementById('curtir5');
+    if (img.src.match("imagens/coracaoVazio.png")) {
+        img.src = "imagens/coracaoCheio.png";
+    }else{
+        img.src = "imagens/coracaoVazio.png";
+    }
+}
+
+function favoritar6(){
+    const img = document.getElementById('curtir6');
+    if (img.src.match("imagens/coracaoVazio.png")) {
+        img.src = "imagens/coracaoCheio.png";
+    }else{
+        img.src = "imagens/coracaoVazio.png";
+    }
+}
+
+function favoritar7(){
+    const img = document.getElementById('curtir7');
+    if (img.src.match("imagens/coracaoVazio.png")) {
+        img.src = "imagens/coracaoCheio.png";
+    }else {
+        img.src = "imagens/coracaoVazio.png";
+    }
+}
+
+shows.forEach(show => show.addEventListener('click', () =>{
+    const valueShow = show.dataset.show;
+    for(let i=0; i< shows.length; i++){
+}
+
+    filtrarItens(valueShow);
+
+function filtrarItens(valueShow){
+    cartas.forEach(carta => {
+        carta.classList.remove('hide');
+
+        if(valueShow == "all"){
+            carta.classList.remove('hide');
         }
-        else if(card.dataset.card !== valueView){
-            card.classList.add('hide');
+        else if(carta.dataset.carta !== valueShow){
+            carta.classList.add('hide');
         }
     })
 
+    }
 }
+)
+)

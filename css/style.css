@@ -1,27 +1,6 @@
 *{
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Andale Mono', monospace !important;
 }
-
-body{
-    background-color: #f0f0f0;
-}
-
-.active{
-    height: 20px;
-}
-
-.active::after{
-    background: #ff2d08;
-    content: '';
-    display: block;
-    height: 3px;
-    margin-top: 15px;
-}
-
-.hide{
-    display: none !important;
-}
-
 
 .fixo{
     position: fixed;
@@ -30,7 +9,51 @@ body{
     z-index: 10;
 }
 
+div{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html{
+    margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    margin: 0;
+    padding-top: 9px;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    background-color: #f0f0f0;
+    line-height: 1;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+.hide{
+    display: none !important;
+}
+
 header{
+    margin: 0;
+	border: 0;
+	font-size: 70%;
+	font: inherit;
+	vertical-align: baseline;
     background-color: #A5A9B4;
     padding: 10px 0 10px 10px;
 }
@@ -42,35 +65,60 @@ header{
 }
 
 .logo-header{
-    width: 100px;
+    max-width: 8%;
+    max-height: 8%;
 }
 
 .titulo-principal{
     align-self: center;
     color: #ffffff;
-    font-size: 32px;
-    margin-left: 20px;
+    font-size: 40px;
+    margin-left: 10px;
 }
 
+footer{
+    position: relative;
+    bottom: 0;
+    background-color: #A5A9B4;
+    color: #FFF;
+    width: 100%;
+    height: 40px;    
+    text-align: center;
+    line-height: 35px;
+}
 
 nav {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
     background-color: #ffffff;
 }
 
-#list-categories{
+.coracaoCheio{
+    display: block;
+    width: fit-content
+}
+
+.coracaoCheio::before{
+    font-weight: bold !important;
+}
+
+#list-categorias{
     display: flex;
     height: 60px;
     margin: 0 auto;
     max-width: 90%;
 }
 
-#list-categories .categorie{
+#list-categorias .categoria{
     align-self: center;
     cursor: pointer;
     font-size: 22px;
     margin-left: 30px;
 }
-
 
 .body{
     display: flex;
@@ -82,71 +130,35 @@ nav {
     max-width: 1024px;
 }
 
-
-.card{
+.carta{
     background-color: #fff;
-    border: 1px solid (0, 0, 0, 1);
-    border-radius: 0.15rem;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 24px;
     position: relative;
     width: 26rem;
 }
 
 .imagem-cartao {
-    border-style: none;
-    border-top-left-radius: calc(0.25rem - 1px);
-    border-top-right-radius: calc(0.25rem - 1px);
     display: block;
     height: 280px;
     width: 100%;
 }
 
-.card-body{
-    padding: 10px;
+.titulo-cartao{
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
-.card-body .titulo-cartao{
+.carta-body{
+    padding-left: 10px;
     font-size: 22px;
-    font-weight: 700;
-    padding-top: 5px;
-    padding-bottom: 2px;
+    font-weight: 300;
+    padding-top: 9px;
+    padding-bottom: 10px;
 }
 
-.card-body .tipo-comida{
+.carta-body .tipo-comida{
     color: gray;
-}
-
-.card-body .heart-icon{
-    color: red;
-    display: block;
-    font-size: 18px;
-    padding-top: 5px;
-    width: fit-content;
-}
-
-.heart-icon::before{
-    font-weight: bold !important;
-}
-.heart-icon:hover{
-    cursor: pointer;
-}
-
-@media (max-width: 576px) {
-    .titulo-principal{
-        font-size: 28px;
-    }
-
-    .categorie{
-        margin-left: 20px !important;
-    }
-
-    .card{
-        width: 18rem;
-    }
-
-    .imagem-cartao{
-        height: 180px;
-    }
 }
