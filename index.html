@@ -4,9 +4,95 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    
-  </body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Site de Receitas</title>
+</head>
+<body>
+  <section class="fixo">
+    <header>
+      <div id="head">
+        <img class="logo-header" src="imagens/icone.gif" alt="ícone principal">
+        <h1 class="titulo-principal">Site de Receitas</h1>
+      </div>      
+    </header>
+    <nav>
+      <ul id="list-categories">
+        <li data-view="all" class="categorie active">Todas</li>
+        <li data-view="bolo" class="categorie">Bolos</li>
+        <li data-view="carne" class="categorie">Carnes</li>
+        <li data-view="bebidas" class="categorie">Bebidas</li>
+      </ul>
+    </nav>
+  </section>
+
+  <section class="body">
+    <div data-card="bolo" class="card">
+      <img class="imagem-cartao" src="imagens/boloCenoura.png" alt="Bolo de cenoura">
+      <div class="card-body">
+        <h3 class="titulo-cartao">Bolo de cenoura</h3>
+        <small class="tipo-comida">Bolos</small>
+        <i class="bi bi-heart heart-icon"></i>
+      </div>
+    </div>
+
+    <div data-card="bolo" class="card">
+      <img class="imagem-cartao" src="imagens/boloFuba.png" alt="Bolo de fubá">
+      <div class="card-body">
+        <h3 class="titulo-cartao">Bolo de fubá</h3>
+        <small class="tipo-comida">Bolos</small>
+        <i class="bi bi-heart heart-icon"></i>
+      </div>
+    </div>
+
+    <div data-card="bebidas" class="card">
+      <img class="imagem-cartao" src="imagens/cappuccino.png" alt="Cappuccino">
+      <div class="card-body">
+        <h3 class="titulo-cartao">Capuccino</h3>
+        <small class="tipo-comida">Bebidas</small>
+        <i class="bi bi-heart heart-icon"></i>
+      </div>
+    </div>
+
+    <div data-card="carne" class="card">
+      <img class="imagem-cartao" src="imagens/hamburguer.png" alt="Hamburguer">
+      <div class="card-body">
+        <h3 class="titulo-cartao">Hamburguer</h3>
+        <small class="tipo-comida">Carnes</small>
+        <i class="bi bi-heart heart-icon"></i>
+      </div>
+    </div>
+
+    <div data-card="carne" class="card">
+      <img class="imagem-cartao" src="imagens/parmegiana.png" alt="Parmegiana">
+      <div class="card-body">
+        <h3 class="titulo-cartao">Parmegiana de carne</h3>
+        <small class="tipo-comida">Carnes</small>
+        <i class="bi bi-heart heart-icon"></i>
+      </div>
+    </div>
+
+    <div data-card="carne" class="card">
+      <img class="imagem-cartao" src="imagens/carne.png" alt="Carne assada">
+      <div class="card-body">
+        <h3 class="titulo-cartao">Carne assada</h3>
+        <small class="tipo-comida">Carnes</small>
+        <i class="bi bi-heart heart-icon"></i>
+      </div>
+    </div>
+
+    <div data-card="bebidas" class="card">
+      <img class="imagem-cartao" src="imagens/milkshake.jpeg" alt="MilkShake">
+      <div class="card-body">
+        <h3 class="titulo-cartao">MilkShake</h3>
+        <small class="tipo-comida">Bebidas</small>
+        <i class="bi bi-heart heart-icon"></i>
+      </div>
+    </div>
+  </section>
+
+  <script src="javaScript/script.js"></script>
+
+</body>
 </html>

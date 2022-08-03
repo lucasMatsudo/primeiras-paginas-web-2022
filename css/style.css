@@ -1,0 +1,152 @@
+*{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+.active{
+    height: 20px;
+}
+
+.active::after{
+    background: #ff2d08;
+    content: '';
+    display: block;
+    height: 3px;
+    margin-top: 15px;
+}
+
+.hide{
+    display: none !important;
+}
+
+
+.fixo{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header{
+    background-color: #A5A9B4;
+    padding: 10px 0 10px 10px;
+}
+
+#head{
+    display: flex;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.logo-header{
+    width: 100px;
+}
+
+.titulo-principal{
+    align-self: center;
+    color: #ffffff;
+    font-size: 32px;
+    margin-left: 20px;
+}
+
+
+nav {
+    background-color: #ffffff;
+}
+
+#list-categories{
+    display: flex;
+    height: 60px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+#list-categories .categorie{
+    align-self: center;
+    cursor: pointer;
+    font-size: 22px;
+    margin-left: 30px;
+}
+
+
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14em;
+    max-width: 1024px;
+}
+
+
+.card{
+    background-color: #fff;
+    border: 1px solid (0, 0, 0, 1);
+    border-radius: 0.15rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+    width: 26rem;
+}
+
+.imagem-cartao {
+    border-style: none;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    display: block;
+    height: 280px;
+    width: 100%;
+}
+
+.card-body{
+    padding: 10px;
+}
+
+.card-body .titulo-cartao{
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+.card-body .tipo-comida{
+    color: gray;
+}
+
+.card-body .heart-icon{
+    color: red;
+    display: block;
+    font-size: 18px;
+    padding-top: 5px;
+    width: fit-content;
+}
+
+.heart-icon::before{
+    font-weight: bold !important;
+}
+.heart-icon:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .titulo-principal{
+        font-size: 28px;
+    }
+
+    .categorie{
+        margin-left: 20px !important;
+    }
+
+    .card{
+        width: 18rem;
+    }
+
+    .imagem-cartao{
+        height: 180px;
+    }
+}
