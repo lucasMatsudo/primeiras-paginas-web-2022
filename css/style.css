@@ -1,5 +1,5 @@
 *{
-    font-family: 'Bradley Hand', cursive !important;
+    font-family: 'monospace', monospace !important;
 }
 
 .fixo{
@@ -35,7 +35,8 @@ body{
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    background-color: #f0f0f0;
+    background: rgb(11,114,232);
+background: linear-gradient(200deg, rgba(11,114,232,1) 0%, rgba(64,139,219,0.14189425770308128) 48%, rgba(0,212,255,1) 100%);
     line-height: 1;
 }
 
@@ -51,10 +52,10 @@ ol, ul {
 header{
     margin: 0;
 	border: 0;
-	font-size: 70%;
+	font-size: 50%;
 	font: inherit;
 	vertical-align: baseline;
-    background-color: #A5A9B4;
+    background-color: #45B0FF;
     padding: 10px 0 10px 10px;
 }
 
@@ -79,7 +80,7 @@ header{
 footer{
     position: relative;
     bottom: 0;
-    background-color: #A5A9B4;
+    background-color: #45B0FF;
     color: #FFF;
     width: 100%;
     height: 40px;    
