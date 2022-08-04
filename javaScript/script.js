@@ -78,20 +78,18 @@ shows.forEach(show => show.addEventListener('click', () =>{
     for(let i=0; i< shows.length; i++){
 }
 
-    filtrarItens(valueShow);
+filtrarItens(valueShow);
 
 function filtrarItens(valueShow){
     cartas.forEach(carta => {
+    carta.classList.remove('hide');
+    if(valueShow == "all"){
         carta.classList.remove('hide');
-
-        if(valueShow == "all"){
-            carta.classList.remove('hide');
+        }else if(carta.dataset.carta !== valueShow){
+        carta.classList.add('hide');
         }
-        else if(carta.dataset.carta !== valueShow){
-            carta.classList.add('hide');
-        }
-    })
-
+}
+)
     }
 }
 )
